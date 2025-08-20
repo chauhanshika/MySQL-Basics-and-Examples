@@ -1,0 +1,8 @@
+SQL (Structured Query Language) is used to interact with relational databases.
+Relational databases store data in tables (rows & columns).
+
+Think of a table like an Excel sheet:
+
+Row → one record (e.g., a student’s details)
+
+Column → an attribute/field (e.g., name, age, roll number)
