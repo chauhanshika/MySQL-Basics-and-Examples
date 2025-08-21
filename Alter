@@ -1,0 +1,19 @@
+#ALTER
+Use to change a table after it is created.
+
+Examples:
+
+1. Add a new column:
+   ALTER TABLE students ADD email VARCHAR(100);
+
+
+2. Change a column (make age compulsory):
+  ALTER TABLE students MODIFY age INT NOT NULL;
+
+
+3. Rename a column:
+  ALTER TABLE students CHANGE course program VARCHAR(50);
+
+
+4.Delete a column:
+  ALTER TABLE students DROP email;
