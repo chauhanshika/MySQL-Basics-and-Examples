@@ -1,0 +1,25 @@
+1. CREATE
+::Use to make a new database or a new table.
+      Example:
+      CREATE DATABASE school;
+      USE school;
+
+
+    Example: 
+    CREATE TABLE students (
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       name VARCHAR(50) NOT NULL,
+       age INT,
+       course VARCHAR(50)
+    );
+
+
+
+
+
+
+id → student’s roll number (unique for each student)
+
+AUTO_INCREMENT → numbers will be added automatically (1,2,3,4…)
+
+NOT NULL → value cannot be empty
