@@ -1,0 +1,21 @@
+The WHERE clause is used to select only the rows that meet certain conditions.
+
+Examples:
+
+1. Filter by value
+SELECT * FROM students WHERE age > 20;
+
+
+2. Filter by text
+SELECT * FROM students WHERE student_name = 'Anshika';
+
+
+3. Using AND / OR
+SELECT * FROM students WHERE age > 20 AND student_name = 'Rahul';
+SELECT * FROM students WHERE age < 22 OR student_name = 'Priya';
+
+
+4. Using NOT
+SELECT * FROM students WHERE NOT age = 21;
+
+
