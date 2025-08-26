@@ -1,0 +1,18 @@
+INSERT is used to add new rows of data into a table.
+
+Examples:
+
+
+1. Insert single row
+INSERT INTO students (id, student_name, age) VALUES (1, 'Anshika', 20);
+
+2. Insert multiple rows
+INSERT INTO students (id, student_name, age) VALUES 
+(2, 'Rahul', 22),
+(3, 'Priya', 21);
+
+3. Insert with default values
+INSERT INTO students (id, student_name) VALUES (4, 'Amit');
+
+4. Check table after insert:
+SELECT * FROM students;
