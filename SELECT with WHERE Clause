@@ -1,0 +1,21 @@
+The WHERE clause is used to filter records based on specific condition
+WHERE allows you to retrieve only the rows that match a given condition.
+You can use operators like =, >, <, >=, <=, !=, and logical operators like AND, OR, NOT.
+
+Examples:
+
+-- Select all employees with salary greater than 50000
+SELECT * FROM Employees
+WHERE Salary > 50000;
+
+-- Select employees from department 'IT'
+SELECT * FROM Employees
+WHERE Department = 'IT';
+
+-- Select employees with salary more than 40000 and in HR department
+SELECT * FROM Employees
+WHERE Salary > 40000 AND Department = 'HR';
+
+-- Select employees not in Finance department
+SELECT * FROM Employees
+WHERE Department != 'Finance';
