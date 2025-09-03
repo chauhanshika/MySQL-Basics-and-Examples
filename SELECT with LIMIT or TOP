@@ -1,0 +1,19 @@
+LIMIT (in MySQL, PostgreSQL) or TOP (in SQL Server) is used to fetch a specific number of rows from the result set.
+
+Useful when you want only a part of the data.
+Often used with ORDER BY to get top salaries, newest records, etc.
+
+
+:::EXAMPLES
+
+-- MySQL / PostgreSQL: Get first 5 employees
+SELECT * FROM Employees
+LIMIT 5;
+
+-- SQL Server: Get first 5 employees
+SELECT TOP 5 * FROM Employees;
+
+-- Get top 3 highest paid employees
+SELECT * FROM Employees
+ORDER BY Salary DESC
+LIMIT 3;
