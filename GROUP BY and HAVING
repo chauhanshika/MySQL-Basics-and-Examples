@@ -1,0 +1,22 @@
+1. GROUP BY is used to group rows that have the same values in one or more columns.
+   GROUP BY works with aggregate functions like COUNT(), SUM(), AVG(), MAX(), MIN().
+
+2. HAVING is used to filter groups, similar to WHERE but for aggregated data.
+   HAVING filters after grouping.
+
+-- Count number of employees in each department
+SELECT Department, COUNT(*) AS EmployeeCount
+FROM Employees
+GROUP BY Department;
+
+-- Count employees in departments having more than 2 employees
+SELECT Department, COUNT(*) AS EmployeeCount
+FROM Employees
+GROUP BY Department
+HAVING COUNT(*) > 2;
+
+-- Average salary per department
+SELECT Department, AVG(Salary) AS AvgSalary
+FROM Employees
+GROUP BY Department
+HAVING AVG(Salary) > 50000;
