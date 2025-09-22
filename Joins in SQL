@@ -1,0 +1,11 @@
+A JOIN is used to combine rows from two or more tables based on a related column.
+Helps to get related data from multiple tables in a single query.
+Tables in a database are often related (e.g., Employees and Departments).
+JOINs allow you to connect these tables using a common column like dept_id.
+Always use ON to specify the matching condition.
+
+example:
+SELECT Employees.name, Departments.department_name
+FROM Employees
+INNER JOIN Departments
+ON Employees.dept_id = Departments.id;
