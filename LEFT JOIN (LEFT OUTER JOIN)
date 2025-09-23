@@ -1,0 +1,7 @@
+Returns all rows from the left table and matching rows from the right table.
+If no match, shows NULL for the right table.
+
+SELECT e.name, d.department_name
+FROM Employees e
+LEFT JOIN Departments d
+ON e.dept_id = d.id;
