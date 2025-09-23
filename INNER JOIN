@@ -1,0 +1,6 @@
+#Returns only the rows that have matching values in both tables.
+
+SELECT e.name, d.department_name
+FROM Employees e
+INNER JOIN Departments d
+ON e.dept_id = d.id;
